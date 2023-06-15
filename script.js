@@ -15,6 +15,10 @@ socket.on('user-connected' , name => {
    appendMessage(`${name} connected`)
 })
 
+socket.on('user-connected' , name => {
+   appendMessage(`${name} disconnected`)
+})
+
 
 
 messageForm.addEventListener('submit' , e => {
